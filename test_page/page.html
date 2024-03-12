@@ -4,13 +4,34 @@
 		<meta charset = "utf-8">
 		<title>Astromangoes Blog</title>
 		<link rel="stylesheet" href="stylin.css">
+		<script>
+			var contentButtonState = 2;
+		</script>
 	</head>
 	<body>
 	<h1>This is just a test for now.</h1>
 	<h2>for real.</h2>
 	<p>seriously</p>
-	 <iframe src="ePages/content1.html" title="content1"></iframe> 
-	 <iframe src="ePages/content2.html" title="content2"></iframe> 
+	<div class="button" id="contentButton">
+		<h1 class="buttonText" id="contentButtonText">Switch to content 2</h1>
+		<iframe id="contentFrame" src="ePages/content1.html" title="content1"></iframe> 
+		<script>
+			const elementText = document.getElementById("contentButtonText");
+			const elementFrame = document.getElementById("contentFrame");
+			
+			function updateText() {
+				if(contentButtonState == 1){
+					elementFrame.src = "ePages/content" + contentButtonState + ".html";
+					contentButtonState = 2;
+				}else if(contentButtonState == 2){
+					elementFrame.src = "ePages/content" + contentButtonState + ".html";
+					contentButtonState = 1;
+				}
+				elementText.innerHTML = "Switch to content " + contentButtonState;
+			}
+			elementText.addEventListener("click", updateText);
+		</script>
+	</div>
 	<img src="face.png">
 	</body>
 </html>
