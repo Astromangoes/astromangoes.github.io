@@ -5,6 +5,7 @@
     min-height: 200px;
     max-height: 250px;
     display:flex;
+    margin: 4% 4%;
 }
 .project-list:hover {
     border-color: #8a8a8a;

@@ -36,11 +36,6 @@ body {
 .content-pane {
     width: 80%;
     background-color: rgb(222, 222, 222);
-    padding: 4% 4%;
-}
-.project-list-img {
-    display:inline;
-    height: 200px;
 }
 .footer {
     background-color: #8a8a8a;
