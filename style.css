@@ -16,7 +16,7 @@ body {
     padding: 8px;
 }
 .navbar a {
-    padding: 8px 12px 8px 12px;
+    padding: 8px 12px;
     color: #aaaaaa;
     text-decoration: none;
     
@@ -27,7 +27,7 @@ body {
 }
 .mid-pane {
     display: flex;
-    height: 3000px;
+    height: 1500px;
 }
 .left-margin {
     width: 10%;
@@ -38,12 +38,12 @@ body {
 .content-pane {
     width: 80%;
     background-color: rgb(222, 222, 222);
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px;
 }
 .footer {
     background-color: #8a8a8a;
     margin: auto;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 20px;
     width: 100%;
     text-align: center;
 }

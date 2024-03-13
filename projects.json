@@ -9,8 +9,8 @@
 },
 {   
     "name": "project 2",
-    "content-src": "projects/project1/project2.html",
-    "img-src": "projects/project1/project2.png",
+    "content-src": "projects/project2/project2.html",
+    "img-src": "projects/project2/project2.png",
     "year": "2024",
     "month": "03",
     "day": "05"
