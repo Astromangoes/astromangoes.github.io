@@ -38,12 +38,12 @@ body {
 .content-pane {
     width: 80%;
     background-color: rgb(222, 222, 222);
-    padding: 20px 20px;
+    padding: 4% 4%;
 }
 .footer {
     background-color: #8a8a8a;
     margin: auto;
-    padding: 20px 0px 20px;
+    padding: 25px 0px;
     width: 100%;
     text-align: center;
 }
