@@ -27,5 +27,8 @@
 }
 .project-list-img {
     display:inline;
-    height: 200px;
+}
+
+.project-list-img img {
+    height: 100px;
 }
