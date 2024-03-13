@@ -3,7 +3,8 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>Astromangoes Blog</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="pageStyle.css">
+		<link rel="stylesheet" href="projectListStyle.css">
 	</head>
 	<body>
 	<div class="header">
@@ -21,11 +22,47 @@
 		</div>
 		<div class="right-margin"></div>
 		<script>
-			function displayProj(projArray) {
+			function formatProjectName(project) {
+				let output = "<h1>"+project.name+"</h1>";
+				return output;
+			}
+			function formatProjectDate(project) {
+				let output = "<sup>"+project.day+"/"+project.month+"/"+project.year+"</sup>";
+				return output;
+			}
+			function formatProjectSummary(project) {
+				let output = "<p>"+project.summary+"</p>";
+				return output;
+			}function formatProjectImg(project) {
+				let output = "<img src="+project.img+">";
+				return output;
+			}
+			function formatProject(project) {
+				let output = "<div class='project-list'>" + 
+							"<div class='project-list-left'>" +
+							"<div class='project-list-name'>" +
+							formatProjectName(project) +
+							"</div>" +
+							"<div class='project-list-date'>" +
+							formatProjectDate(project) +
+							"</div>" +
+							"<div class='project-list-summary'>" +
+							formatProjectSummary(project) +
+							"</div>" +
+							"</div>" +
+							"<div class='project-list-right'>" +
+							"<div class='project-list-img'>" +
+							formatProjectImg(project) +
+							"</div>" +
+							"</div>" +
+							"</div>";
+				return output;
+			}
+			function drawProjects(projArray) {
 				let output = "";
 				for(let i = 0; i < projArray.length; i++) {
 					let currProj = projArray[i];
-					output += "<li>" + currProj.name + "</li>";
+					output += formatProject(currProj);
 				}
 				document.getElementById("proj").innerHTML = output;
 			}
@@ -35,7 +72,7 @@
     				if (this.readyState == 4 && this.status == 200) {
     					console.log(JSON.parse(this.responseText));
 						let projects = JSON.parse(this.responseText);
-						displayProj(projects);
+						drawProjects(projects);
 					}
   				};
   					xhttp.open("GET", filename, true);

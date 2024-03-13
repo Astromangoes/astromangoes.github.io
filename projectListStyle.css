@@ -1,0 +1,31 @@
+.project-list {
+    border-style:solid;
+    border-width: 4px;
+    display:flex;
+}
+.project-list:hover {
+    border-color: #8a8a8a;
+}
+.project-list-left {
+    background-color: yellow;
+}
+.project-list-name {
+    align-self: left;
+    margin:none;
+    background-color:red;
+}
+.project-list-summary {
+    background-color:magenta;
+}
+.project-list-date {
+    align-self:right;
+    padding: 10px;
+    background-color:blue;
+}
+.project-list-right {
+    background-color: green;
+}
+.project-list-img {
+    display:inline;
+    height: 200px;
+}
