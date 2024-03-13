@@ -2,6 +2,8 @@
 .project-list {
     border-style:solid;
     border-width: 4px;
+    min-height: 200px;
+    max-height: 250px;
     display:flex;
 }
 .project-list:hover {
@@ -12,16 +14,21 @@
 .project-list-left {
     background-color: yellow;
     width: 75%;
-    display: grid;
+    display: inline;
 }
     /*Left Top*/
     .project-list-left-top {
         display: flex;
+        height: 20%;
     }
     .project-list-name {
-        align-self: left;
+        padding: 0px;
         width: 70%;
         background-color:red;
+        font-size: 100%;
+    }
+    .project-list-name h1 {
+        margin: 0px;
     }
     .project-list-date {
         align-self:right;
@@ -32,6 +39,7 @@
     /*left Bottom*/
     .project-list-left-bottom {
         display: flex;
+        height: 80%;
     }
     .project-list-summary {
         background-color:magenta;
