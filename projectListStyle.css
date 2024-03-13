@@ -53,8 +53,11 @@
     width: 25%;
 }
 .project-list-img {
-    display:inline;
+    padding: 0px;
+    display: inline;
+    justify-content: center;
 }
 .project-list-img img {
+    max-height: 100%;
     max-width: 100%;
 }
