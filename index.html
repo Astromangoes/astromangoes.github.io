@@ -3,11 +3,49 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>Astromangoes Blog</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	<h1>This is just a test for now.</h1>
-	<h2>for real.</h2>
-	<p>seriously</p>
-	<a href="test_page/page.html">test page here</a>
+	<div class="header">
+		<h1>Project Log</h1>
+	</div>
+	<div class="navbar">
+		<a href="">Home</a>
+		<a href="">Project List</a>
+		<a href="">About</a>
+	</div>
+	<div class="mid-pane">
+		<div class="left-margin"></div>
+		<div class="content-pane" id="proj">
+
+		</div>
+		<div class="right-margin"></div>
+		<script>
+			function displayProj(projArray) {
+				let output = "";
+				for(let i = 0; i < projArray.length; i++) {
+					let currProj = projArray[i];
+					output += "<li>" + currProj.name + "</li>";
+				}
+				document.getElementById("proj").innerHTML = output;
+			}
+			function loadJSONDoc(filename) {
+  				var xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function() {
+    				if (this.readyState == 4 && this.status == 200) {
+    					console.log(JSON.parse(this.responseText));
+						let projects = JSON.parse(this.responseText);
+						displayProj(projects);
+					}
+  				};
+  					xhttp.open("GET", filename, true);
+  					xhttp.send();
+			}
+			loadJSONDoc("projects.json");
+		</script>
+	</div>
+	<div class="footer">
+		<a href="test_page/page.html">test page here</a>
+	</div>
 	</body>
 </html>

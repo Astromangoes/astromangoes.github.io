@@ -1,0 +1,53 @@
+body {
+	background-color: #b3b3b3;
+    font-family: Segoe UI;
+    margin: 0;
+}
+.header {
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    ;
+}
+.navbar {
+    background-color: #000000;
+    color: #8a8a8a;
+    padding: 8px;
+}
+.navbar a {
+    padding: 8px 12px 8px 12px;
+    color: #aaaaaa;
+    text-decoration: none;
+    
+}
+.navbar a:hover {
+    color: #000000;
+    background-color: #aaaaaa;
+}
+.mid-pane {
+    display: flex;
+    height: 3000px;
+}
+.left-margin {
+    width: 10%;
+}
+.right-margin {
+    width: 10%;
+}
+.content-pane {
+    width: 80%;
+    background-color: rgb(222, 222, 222);
+    padding: 20px 20px 20px 20px;
+}
+.footer {
+    background-color: #8a8a8a;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+.footer a {
+    display: inline-block;
+    color: #000000;
+}

@@ -1,0 +1,18 @@
+[
+{   
+    "name": "project 1",
+    "content-src": "projects/project1/project1.html",
+    "img-src": "projects/project1/project1.png",
+    "year": "2024",
+    "month": "03",
+    "day": "05"
+},
+{   
+    "name": "project 2",
+    "content-src": "projects/project1/project2.html",
+    "img-src": "projects/project1/project2.png",
+    "year": "2024",
+    "month": "03",
+    "day": "05"
+}
+]
