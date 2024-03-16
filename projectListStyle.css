@@ -45,7 +45,7 @@
         margin: 0px;
         position: absolute;
         height: 100%;
-        font-size: clamp(`20px, 80%, 8vh);
+        font-size: clamp(20px, 80%, 10vh);
     }
 
     /*left Bottom*/
