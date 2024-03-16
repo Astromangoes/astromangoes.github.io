@@ -24,17 +24,28 @@
     }
     .project-list-name {
         padding: 0px;
-        width: 70%;
+        width: 80%;
         background-color:red;
-        font-size: 100%;
+        position: relative;
     }
     .project-list-name h1 {
         margin: 0px;
+        position: absolute;
+        top: -15%;
+        left: 1%;
     }
     .project-list-date {
         align-self:right;
-        width: 30%;
+        align-items: center;
+        width: 20%;
         background-color:blue;
+        position: relative;
+    }
+    .project-list-date span {
+        margin: 0px;
+        position: absolute;
+        height: 100%;
+        font-size: clamp(`20px, 80%, 8vh);
     }
 
     /*left Bottom*/
@@ -54,10 +65,20 @@
 }
 .project-list-img {
     padding: 0px;
-    display: inline;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 .project-list-img img {
-    max-height: 100%;
+    background-color: yellow;
+    color: orange;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: 0px;
     max-width: 100%;
+    max-height: 100%;
 }

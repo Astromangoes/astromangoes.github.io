@@ -11,6 +11,8 @@ body {
 }
 .navbar {
     background-color: #000000;
+    position: sticky;
+    top: 0px;
     color: #8a8a8a;
     padding: 8px;
 }

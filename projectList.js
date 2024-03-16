@@ -40,7 +40,7 @@ function formatProject(project) {
 }
 function drawProjects(projArray) {
     let output = "";
-    for(let i = 0; i < projArray.length; i++) {
+    for(let i = (projArray.length-1); i > -1; i--) {
         let currProj = projArray[i];
         output += formatProject(currProj);
     }
