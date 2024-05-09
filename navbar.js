@@ -3,16 +3,14 @@ function newButton(name, url) {
     return output;
 }
 
-const buttons = [newButton("Home", "index.html"),
-                 newButton("Project List", ""),
-                 newButton("About", "")];
+const navButtons = [newButton("Home", "index.html"),
+                    newButton("Project List", "projList.html"),
+                    newButton("About", "about.html")];
 
-function addNav(buttonArray) {
-    let output = "";
-    for(let i = 0; i > (buttonArray.length-1); i++) {
-        output += buttonArray[i];
-    }
-    document.getElementsByClassName("navbar").innerHTML = output;
+let navItems = "";
+console.log(navButtons.length);
+for(let i = 0; i <= (navButtons.length-1); i++) {
+    navItems += navButtons[i];
+    console.log(navItems);
 }
-
-addNav(buttons);
+document.getElementById("navbar").innerHTML = navItems;
