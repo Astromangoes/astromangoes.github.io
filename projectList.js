@@ -14,28 +14,30 @@ function formatProjectSummary(project) {
     return output;
 }
 function formatProject(project) {
-    let output = "<div class='project-list'>" + 
-                "<div class='project-list-left'>" +
-                "<div class='project-list-left-top'>" +
-                "<div class='project-list-name'>" +
-                formatProjectName(project) +
-                "</div>" +
-                "<div class='project-list-date'>" +
-                formatProjectDate(project) +
-                "</div>" +
-                "</div>" +
-                "<div class='project-list-left-bottom'>" +
-                "<div class='project-list-summary'>" +
-                formatProjectSummary(project) +
-                "</div>" +
-                "</div>" +
-                "</div>" +
-                "<div class='project-list-right'>" +
-                "<div class='project-list-img'>" +
-                formatProjectImg(project) +
-                "</div>" +
-                "</div>" +
-                "</div>";
+    let output = "<a class='project-link' href='/projects/" + project.folder + "/" + project.folder + ".html'>" +
+                 "<div class='project-list'>" +
+                 "<div class='project-list-left'>" +
+                 "<div class='project-list-left-top'>" +
+                 "<div class='project-list-name'>" +
+                 formatProjectName(project) +
+                 "</div>" +
+                 "<div class='project-list-date'>" +
+                 formatProjectDate(project) +
+                 "</div>" +
+                 "</div>" +
+                 "<div class='project-list-left-bottom'>" +
+                 "<div class='project-list-summary'>" +
+                 formatProjectSummary(project) +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
+                 "<div class='project-list-right'>" +
+                 "<div class='project-list-img'>" +
+                 formatProjectImg(project) +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
+                 "</a>";
     return output;
 }
 function drawProjects(projArray) {

@@ -1,4 +1,7 @@
 /*Main*/
+.project-link {
+    all:unset;
+}
 .project-list {
     border-style:solid;
     border-width: 4px;
