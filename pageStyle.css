@@ -5,6 +5,7 @@ body {
 }
 .header {
     background-color: #202020;
+    position: relative;
     color: #ffffff;
     text-align: center;
     padding: 16px;

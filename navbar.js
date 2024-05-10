@@ -3,9 +3,9 @@ function newButton(name, url) {
     return output;
 }
 
-const navButtons = [newButton("Home", "index.html"),
-                    newButton("Project List", "projList.html"),
-                    newButton("About", "about.html")];
+const navButtons = [newButton("Home", "/index.html"),
+                    newButton("Project List", "/projList.html"),
+                    newButton("About", "/about.html")];
 
 let navItems = "";
 console.log(navButtons.length);

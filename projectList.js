@@ -10,7 +10,7 @@ function formatProjectSummary(project) {
     let output = "<p>"+project.summary+"</p>";
     return output;
 }function formatProjectImg(project) {
-    let output = "<img src="+project.img+">";
+    let output = "<img src='/projects/"+project.folder+"/"+project.folder+".jpg'>";
     return output;
 }
 function formatProject(project) {
@@ -58,4 +58,4 @@ function loadJSONDoc(filename) {
           xhttp.open("GET", filename, true);
           xhttp.send();
 }
-loadJSONDoc("projects.json");
+loadJSONDoc("/projects/projects.json");
